@@ -1,0 +1,16 @@
+.title {
+    margin: 0;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #0d0d0d;
+    &-left {
+        line-height: 4.4rem;
+        color: #fff;
+        text-align: left;
+        span {
+        display: block;
+        color: #fff;
+        }
+    }
+}

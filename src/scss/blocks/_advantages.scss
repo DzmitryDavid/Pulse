@@ -2,13 +2,6 @@
     background-color: #f6f6f6;
     padding-top: 7rem;
     padding-bottom: 7.1rem;
-    &__title {
-        margin: 0;
-        text-align: center;
-        font-size: 3rem;
-        font-weight: bold;
-        color: #0d0d0d;
-    }
 
     &__items {
         padding-top: 6.5rem;
@@ -16,12 +9,10 @@
         justify-content: space-between;
         color: #0d0d0d;
 
-
     }
     &__item {
         text-align: center;
         width: 26%
-        
     }
 }
 
