@@ -1,0 +1,40 @@
+.reviews {
+
+    
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 7rem 0;
+    }
+    
+    &-item {
+        display: flex;
+        margin-bottom: 10rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__inner {
+            margin-left: 6.3rem;
+        }
+        &__subtitle {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &__descr {
+            font-size: 1.6rem;
+            color: #0d0d0d;
+            margin-top: 1.9rem;
+            
+        }
+        &__progress {
+            font-size: 14px;
+            font-weight: 300;
+            color: #646464;
+            margin-top: 1rem;
+        }
+        span {
+            margin-top: 2rem;
+            display: block;
+        }
+    }
+}
