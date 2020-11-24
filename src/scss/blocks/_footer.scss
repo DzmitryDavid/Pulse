@@ -1,0 +1,50 @@
+.footer {
+    height: 63rem;
+    position: relative;
+    &__info {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform:translateX(-50%);
+        height: 27rem;
+        width: 46rem;
+        background-color: $main-color;
+        padding: 5rem 6.8rem 6rem 6.8rem;
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__social-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin: 0 15px;
+        img {
+            height: 27px;
+            width: 50px;
+            height: 50px;
+        }       
+    }
+    &__address {
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 3.6rem;
+        line-height: 2rem;
+    }
+    &__phone {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 3.8rem;
+        line-height: 2rem;
+    }
+}
