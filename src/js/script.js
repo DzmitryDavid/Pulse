@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.carousel__inner').slick({
         infinite: true,
         // adaptiveHeight: true,
@@ -87,6 +87,39 @@ $(document).ready(function(){
     validateForm('#consultation-form');
     validateForm('#consultation form');
     validateForm('#order form');
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type:"POST",    
+            url: "./assets/mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow'); 
+
+
+            $('form').trigger('reset');
+        });
+        return false
+    });
+    
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href='#up']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"0px"});
+        return false;
+}); 
+
+    new WOW().init();
 });
 
 

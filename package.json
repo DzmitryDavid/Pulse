@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/DzmitryDavid/uber#readme",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -29,5 +30,5 @@
     "not IE 11",
     "not IE_Mob 11",
     "maintained node versions"
-  ] 
+  ]
 }
