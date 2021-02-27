@@ -1,0 +1,145 @@
+
+@media (max-width: 1300px) {
+
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    
+   
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+   
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &__phone {
+            font-size: 1.5rem;
+        }
+        &__official {
+            span {
+                .header__official span {
+                    display: block;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+    }
+    .promo {
+        &__wrapper {
+            margin-top: 5rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        &__header {
+            font-size: 3rem;
+        }
+        &__subheader {
+            font-size: 2rem;
+        }
+        &__icons {
+            width: 100%;
+            margin-top: 3rem;
+        }
+    }
+    .advantages {
+        padding-top: 3rem;
+        &__items {
+            padding-top: 2.5rem;
+
+        }
+        &__item {
+            margin-top: 2.5rem;
+            width: 100%;
+        }
+    }
+    .title {
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    .item__subtitle {
+        margin-top: 2rem;
+    }
+    .reviews-item {
+        &__img {
+            display: none;
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+        &__tabs {
+            margin-top: 2rem;
+            flex-direction: column;
+        }
+        &__tab {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+        }
+        &-item {
+            &__wrapper {
+                width: calc(200% + 30px);
+            }
+        }
+    }
+    .reviews-item__inner {
+        margin: 0 auto;
+    }
+    .footer__info {
+        width:90%;
+        text-align: center;
+        height: 50%;
+    }
+    .title-left {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .consultation__descr {
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .feed-form {
+        display: flex;
+        flex-direction: column;
+        width: 22rem;
+    }
+    .modal {
+        width: 30rem;
+        &__close {
+            right: 3rem;
+            line-height: 5rem;
+        }
+    }
+}
+    
+
+
